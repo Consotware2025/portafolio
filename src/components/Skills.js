@@ -30,35 +30,67 @@ export const Skills = () => {
 
   return (
     <section className="skill" id="skills">
-        <div className="container">
-            <div className="row">
-                <div className="col-12">
-                    <div className="skill-bx wow zoomIn">
-                        <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
-                        <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
-                            </div>
-                            <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
-                            </div>
-                        </Carousel>
-                    </div>
+      <div className="container">
+        <div className="row">
+          <div className="col-12">
+            <div className="skill-bx wow zoomIn">
+              <h2>Habilidades</h2>
+              <p>Estas son algunas de mis principales habilidades y tecnologías que domino en el ámbito del desarrollo backend y frontend.<br></br> Desde la gestión de servidores hasta el desarrollo de interfaces modernas y escalables.</p>
+              <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
+                <div className="item">
+                  <img src={meter1} alt="Laravel" />
+                  <h5>Laravel-PHP</h5>
+                </div>                
+                <div className="item">
+                  <img src={meter3} alt="Node.js" />
+                  <h5>Node.js</h5>
                 </div>
+                <div className="item">
+                  <img src={meter1} alt="React" />
+                  <h5>React</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Vue.js" />
+                  <h5>Vue.js</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="MySQL" />
+                  <h5>MySQL</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="MongoDB" />
+                  <h5>MongoDB</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="Redis" />
+                  <h5>Redis</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="PostgreSQL" />
+                  <h5>PostgreSQL</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="GitLab" />
+                  <h5>GitLab</h5>
+                </div>
+                <div className="item">
+                  <img src={meter2} alt="GitHub" />
+                  <h5>GitHub</h5>
+                </div>
+                <div className="item">
+                  <img src={meter3} alt="Docker" />
+                  <h5>Docker</h5>
+                </div>
+                <div className="item">
+                  <img src={meter1} alt="Kubernetes" />
+                  <h5>Kubernetes</h5>
+                </div>
+              </Carousel>
             </div>
+          </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+      </div>
+      <img className="background-image-left" src={colorSharp} alt="Image" />
     </section>
-  )
+  );
 }
