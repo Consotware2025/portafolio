@@ -1,17 +1,18 @@
-import { useState, useEffect } from "react";
-import { Container, Row, Col } from "react-bootstrap";
-import headerImg from "../assets/img/header-img.svg";
+import React, { useState, useEffect } from 'react';
+import { Container, Row, Col } from 'react-bootstrap';
+import headerImg from '../assets/img/header-img.svg';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
+import portfolioData from '../Data/info';
 
-export const Banner = () => {
+export const Banner = ({ person }) => {
   const [loopNum, setLoopNum] = useState(0);
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
   const [index, setIndex] = useState(1);
-  const toRotate = [ "Web Developer", "Web Designer", "UI/UX Designer" ];
+  const toRotate = ['del Grupo C'];
   const period = 2000;
 
   useEffect(() => {
@@ -19,8 +20,8 @@ export const Banner = () => {
       tick();
     }, delta);
 
-    return () => { clearInterval(ticker) };
-  }, [text])
+    return () => clearInterval(ticker);
+  }, [text]);
 
   const tick = () => {
     let i = loopNum % toRotate.length;
@@ -30,12 +31,12 @@ export const Banner = () => {
     setText(updatedText);
 
     if (isDeleting) {
-      setDelta(prevDelta => prevDelta / 2);
+      setDelta((prevDelta) => prevDelta / 2);
     }
 
     if (!isDeleting && updatedText === fullText) {
       setIsDeleting(true);
-      setIndex(prevIndex => prevIndex - 1);
+      setIndex((prevIndex) => prevIndex - 1);
       setDelta(period);
     } else if (isDeleting && updatedText === '') {
       setIsDeleting(false);
@@ -43,35 +44,48 @@ export const Banner = () => {
       setIndex(1);
       setDelta(500);
     } else {
-      setIndex(prevIndex => prevIndex + 1);
+      setIndex((prevIndex) => prevIndex + 1);
     }
-  }
+  };
 
   return (
     <section className="banner" id="home">
       <Container>
-        <Row className="aligh-items-center">
+        <Row className="align-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline">Bienvenido a mi Portafolio</span>
-                <h1>{`¡Hola! Soy Francisco Chambi`} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Programador Backend", "Programador Frontend", "Desarrollador Fullstack" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>Soy un apasionado programador backend y frontend con experiencia en el desarrollo de aplicaciones web modernas y escalables. ¡Vamos a conectar y crear algo increíble juntos!.</p>
+              {({ isVisible }) => (
+                <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+                  {person ? (
+                    <>
+                      <h1>¡Hola! Soy {person.info.name} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "del Grupo C" ]'><span className="wrap">{text}</span></span></h1>
+                      
+                      <h2>{person.info.tagline}</h2>
+                      <p>{person.info.description}</p>
+                    </>
+                  ) : (
+                    <>
+                      <span className="tagline">Grupo C - Innovando en la programación, unidos por el avance tecnológico.</span>
+                      <h1>Información</h1>
+                      <p>Somos el Grupo C, un equipo comprometido con la innovación tecnológica y el avance continuo en el desarrollo de software. Nos enfocamos en crear soluciones modernas, escalables y eficientes para afrontar los desafíos tecnológicos actuales.</p>
+                    </>
+                  )}
                   <button onClick={() => console.log('connect')}>Conectemos <ArrowRightCircle size={25} /></button>
-              </div>}
+                </div>
+              )}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
             <TrackVisibility>
-              {({ isVisible }) =>
+              {({ isVisible }) => (
                 <div className={isVisible ? "animate__animated animate__zoomIn" : ""}>
-                  <img src={headerImg} alt="Header Img"/>
-                </div>}
+                  <img src={headerImg} alt="Header Img" />
+                </div>
+              )}
             </TrackVisibility>
           </Col>
         </Row>
       </Container>
     </section>
-  )
-}
+  );
+};
