@@ -1,3 +1,5 @@
+//componente de suscripción al boletín
+
 import { useState, useEffect } from "react";
 import { Col, Row, Alert } from "react-bootstrap";
 

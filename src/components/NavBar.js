@@ -1,10 +1,7 @@
+//componente de la navegación
+
 import React, { useState, useEffect } from 'react';
 import { Navbar, Nav, Container } from 'react-bootstrap';
-import logo from '../assets/img/logo.svg';
-import navIcon1 from '../assets/img/nav-icon1.svg';
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
-import { HashLink } from 'react-router-hash-link';
 import { BrowserRouter as Router } from 'react-router-dom';
 import portfolioData from '../Data/info';
 
@@ -56,7 +53,7 @@ export const NavBar = ({ onSelectPerson }) => {
               {portfolioData.map((person) => (
                 <Nav.Link key={person.id} href="#home" className={activeLink === person.info.name ? 'active navbar-link' : 'navbar-link'} onClick={() => { onUpdateActiveLink(person.info.name); handleSelectPerson(person.id); }}>{person.info.name}</Nav.Link>
               ))}
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              
             </Nav>
            
           </Navbar.Collapse>

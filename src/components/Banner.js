@@ -1,10 +1,11 @@
+// Description: Componente de Banner que muestra información sobre el Grupo C y su enfoque en la innovación tecnológica. Incluye animaciones y un botón de conexión.
+
 import React, { useState, useEffect } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import headerImg from '../assets/img/header-img.svg';
 import { ArrowRightCircle } from 'react-bootstrap-icons';
 import 'animate.css';
 import TrackVisibility from 'react-on-screen';
-import portfolioData from '../Data/info';
 
 export const Banner = ({ person }) => {
   const [loopNum, setLoopNum] = useState(0);
