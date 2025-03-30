@@ -8,7 +8,7 @@
 
 Somos el **Grupo C**, un equipo comprometido con la innovación tecnológica y el avance continuo en el desarrollo de software. Nuestra misión es crear soluciones modernas, escalables y eficientes para afrontar los desafíos actuales del mundo digital.
 
-![Banner](./images/portafolio_principal.png)
+![Banner]
 
 ---
 
@@ -17,7 +17,7 @@ Somos el **Grupo C**, un equipo comprometido con la innovación tecnológica y e
 ### 🚀 Francisco Chambi
 **Backend & Frontend Developer**
 
-![Francisco Chambi](./images/francisco_chambi.png)
+![Francisco Chambi]
 
 Soy Técnico en Computación con un fuerte enfoque en el desarrollo backend y frontend, apasionado por crear aplicaciones web modernas y escalables. Actualmente estoy ampliando mis conocimientos hacia DevOps y SRE, automatizando despliegues y administrando infraestructuras robustas.
 
@@ -27,14 +27,14 @@ Soy Técnico en Computación con un fuerte enfoque en el desarrollo backend y fr
 - React (95%)
 
 **🔗 Proyectos:**
-![Proyectos Francisco](./images/proyectos_francisco.png)
+![Proyectos Francisco]
 
 ---
 
 ### 👩‍🚀 Jacquelie Salvador
 **Administradora de Negocios y Estudiante de Ingeniería de Sistemas**
 
-![Jacquelie Salvador](./images/jacquelie_salvador.png)
+![Jacqueline Salvador]
 
 Soy estudiante de Ingeniería de Sistemas con interés en el análisis de datos y el desarrollo full-stack. Experiencia en capacitación, redes sociales y manejo de bases de datos para soluciones web escalables.
 
@@ -44,14 +44,14 @@ Soy estudiante de Ingeniería de Sistemas con interés en el análisis de datos 
 - Desarrollo Web (95%)
 
 **🔗 Proyectos:**
-![Proyectos Jacquelie](./images/proyectos_jacquelie.png)
+![Proyectos Jacquelie]
 
 ---
 
 ### 👩‍🚀 Alexandra Tipacti
 **Desarrolladora Web y Especialista en Frontend**
 
-![Alexandra Tipacti](./images/alexandra_tipacti.png)
+![Alexandra Tipacti]
 
 Soy una apasionada estudiante de Ingeniería de Sistemas, con interés en el desarrollo de software, inteligencia artificial y ciberseguridad. Me encanta crear soluciones tecnológicas innovadoras y mejorar la eficiencia de procesos.
 
@@ -62,14 +62,14 @@ Soy una apasionada estudiante de Ingeniería de Sistemas, con interés en el des
 - Ciberseguridad (95%)
 
 **🔗 Proyectos:**
-![Proyectos Alexandra](./images/proyectos_alexandra.png)
+![Proyectos Alexandra]
 
 ---
 
 ### 👨‍🚀 Damian Ricra
 **Desarrollador Web Full Stack**
 
-![Damian Ricra](./images/damian_ricra.png)
+![Damian Ricra]
 
 Soy estudiante de Ingeniería de Sistemas con un enfoque en el desarrollo web full stack. Apasionado por crear aplicaciones web modernas y escalables.
 
@@ -79,14 +79,14 @@ Soy estudiante de Ingeniería de Sistemas con un enfoque en el desarrollo web fu
 - C# (95%)
 
 **🔗 Proyectos:**
-![Proyectos Damian](./images/proyectos_damian.png)
+![Proyectos Damian]
 
 ---
 
 ### 👨‍🚀 Edgar Aliaga
 **Especialista en Infraestructura de Red y Telecomunicaciones**
 
-![Edgar Aliaga](./images/edgar_aliaga.png)
+![Edgar Aliaga]
 
 Soy Técnico en Telecomunicaciones y estudiante de Ingeniería de Sistemas. Apasionado por la inteligencia artificial, la ciberseguridad y la conectividad eficiente en redes robustas.
 
@@ -96,7 +96,7 @@ Soy Técnico en Telecomunicaciones y estudiante de Ingeniería de Sistemas. Apas
 - Cisco (95%)
 
 **🔗 Proyectos:**
-![Proyectos Edgar](./images/proyectos_edgar.png)
+![Proyectos Edgar]
 
 ---
 
