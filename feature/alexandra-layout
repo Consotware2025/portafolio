@@ -1,0 +1,20 @@
+import React from 'react';
+
+const AlexandraLayout = () => {
+  return (
+    <section className="alexandra-layout p-10 bg-gradient-to-b from-white to-gray-100 min-h-screen">
+      <div className="max-w-4xl mx-auto text-center">
+        <h2 className="text-4xl font-bold text-purple-700 mb-6">Sección de Alexandra</h2>
+        <p className="text-lg text-gray-600 mb-4">
+          Esta es la sección del layout diseñada por Alexandra. Aquí irá contenido visual,
+          una breve presentación y otros componentes estéticos que representen su parte en el portafolio.
+        </p>
+        <div className="bg-white rounded-xl shadow-lg p-6 mt-6">
+          <p className="text-gray-800">[Espacio para contenido futuro]</p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default AlexandraLayout;
